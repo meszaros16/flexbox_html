@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url('képek/bg-body.jpg');
+}
+
+.wrapper{
+    max-width: 1000px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+header{
+    background: url('képek/bg-header.jpg');
+    color: white;
+    padding: 40px;
+    font-size: 80px;
+}
+
+.box{
+    display: flex;
+    background: rgba(0, 0, 0, .8);
+}
+
+main{
+    background-color: white;
+    width: 80vw;
+}
+
+main p{
+    padding: 20px;
+    margin: 0;
+}
+
+main h1{
+    margin: 0;
+    padding: 20px;
+}
+
+nav{
+    width: 20vw;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li{
+    border-bottom: 1px dashed white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+nav a:hover{
+    background: rgba(255, 255, 255, .3);
+}
+
+@media (max-width: 800px){
+    .box{
+        display: flex;
+        background: rgba(0, 0, 0, .8);
+        flex-flow: row wrap;
+        flex-direction: column-reverse;
+    }
+
+    main{
+        background-color: white;
+        width: 100%;
+        height: 45vw;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    nav{
+        width: 100%;
+        height: 55vw;
+    }
+}
+
+@media (max-width: 650px){
+    nav{
+        width: 100%;
+        height: 55vw;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
